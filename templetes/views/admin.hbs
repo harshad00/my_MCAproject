@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+      
+        .admin-container {
+            max-width: 800px;
+            /* height: 400px; */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top:7rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+        .addimg{
+            width: 10rem;
+            height: 10rem;
+            border: 2px solid #ccc;
+            border-radius: 100%;
+        }
+        .admin-detail{
+            width: 30rem;
+            margin: 2rem;
+            text-align: center;
+        }
+        .btn_add{
+            width: auto;
+             height: 7rem; 
+            margin: 0px auto;
+            
+            
+        }
+        .btn {
+            width: 100%;
+            height: 2rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            margin:0px 2px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        a{
+            text-decoration: none;
+            position: absolute;
+            top: 5rem;  
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+         <img class="addimg" src="image/r1.webp" alt="limage not render">
+         <div class="admin-detail">
+            <label for="name">Name: prjapati harshad</label><br>
+            <label for="">Email: addmin1@ggh.in</label>   
+        </div>
+                <div class="btn_add">
+            <a  href="sell-form"  class="btn" id="addProductBtn">Add Product</a>
+            <a href="userdata" class="btn"> UserData</a>
+            <a href="" class="btn"> OrderData</a>
+            <a href="" class="btn"> UpdetProductData</a>
+        </div>
+        </div>
+</body>
+</html>

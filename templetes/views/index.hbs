@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodsGiobe.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <head>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">GGHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">AboutUs</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop By Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="phones">Mobile</a></li>
+                                <li><a class="dropdown-item" href="car">Car</a></li>
+                                <li><a class="dropdown-item" href="book">Books</a></li>
+                                <li><a class="dropdown-item" href="furniture">Furniture</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="login"> <button class="btn btn-outline-warning me-2" id="btn_login"
+                            type="submit">Login</button></a>
+                  <a href="sell-form">  <button class="btn btn-outline-warning me-2" type="submit">+Sell</button></a>
+                    {{!-- <form class="d-flex" role="search ">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> --}}
+                </div>
+            </div>
+        </nav>
+    </head>
+
+    <main class="main">
+        <!-- ! for image lslider -->
+        <div class="slider">
+            <div id="carouselExampleAutoplaying" class="carousel slide slide_w" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image//funchir.png" class="d-block  br_img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/book.jpg" class="d-block br_img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/neeeraj.jpg" class="d-block br_img" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- ! for BootStrap card. -->
+
+        <div class="heading">
+            <h2 class="heading_text"> Products </h2>
+        </div>
+        <div class="main_card">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/car.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Car</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/cam.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Camera</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/hed.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Headphone</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/home.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Decoration/furniture</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/home2.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">sofa</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/ch.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">chair</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/woch.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">watch</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/phone1.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobail</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/book1.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bools</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/table1.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Desktop-setup</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login"  class="btn btn-primary">Buy</a>
+                                <a href="login"  class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/laptop.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Leptop</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img" src="/image/phone.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">iPhone15</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="login" class="btn btn-primary">Buy</a>
+                                <a href="login" class="btn btn-primary">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="heading">
+                <h2 class="heading_text"> User Reviews </h2>
+            </div>
+            <div class="container review_catd">
+                <div class="row">
+                    <div class="col">
+                        <div class="review_card">
+                            <div class="review_img"><img class="rv_img" src="image/Instagram-Girl-DP.webp" alt=""></div>
+                            <div class="review_text">
+                                <h4 class="review_heheading">Review Title</h4>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Ea voluptatum,
+                                    labore vero voluptatem alias placeat culpa ! Dolorum cupiditate qui a necessitatibus
+                                    voluptatibus soluta esse eos eligendi beatae ! Fugit,
+                                    officiis suscipit ! </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="review_card">
+                            <div class="review_img"><img class="rv_img" src="image/r2.jpeg" alt=""></div>
+                            <div class="review_text">
+                                <h4 class="review_heheading">Review Title</h4>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Ea voluptatum,
+                                    labore vero voluptatem alias placeat culpa ! Dolorum cupiditate qui a necessitatibus
+                                    voluptatibus soluta esse eos eligendi beatae ! Fugit,
+                                    officiis suscipit ! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="review_card">
+                            <div class="review_img"><img class="rv_img" src="image/r1.webp" alt=""></div>
+                            <div class="review_text">
+                                <h4 class="review_heheading">Review Title</h4>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Ea voluptatum,
+                                    labore vero voluptatem alias placeat culpa ! Dolorum cupiditate qui a necessitatibus
+                                    voluptatibus soluta esse eos eligendi beatae ! Fugit,
+                                    officiis suscipit ! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+    <!-- ! footer -->
+    <footer class="footer">
+        <div class="footer_ex">
+            <div class="text_logo">
+                <h1 class="text_logo_size">GoodsGlobe.com</h1>
+            </div>
+            <div class="footer_cart">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <h4>ABOUT US</h4>
+                            <div><a class="footer_txt" href="">About GGH Group </a></div>
+                            <div><a class="footer_txt" href="">Careers</a></div>
+                            <div><a class="footer_txt" href="">Contact Us</a></div>
+                            <div><a class="footer_txt" href="">GGHubPeople</a></div>
+                            <div><a class="footer_txt" href="">Jobs</a></div>
+                        </div>
+                        <div class="col">
+                            <h4>GGHub.com</h4>
+                            <div><a class="footer_txt" href="">Help</a></div>
+                            <div><a class="footer_txt" href="">Sitemap</a></div>
+                            <div><a class="footer_txt" href="">Legal & Privacy information</a></div>
+                            <div><a class="footer_txt" href="">Blog</a></div>
+                            <div><a class="footer_txt" href="">GGhub Autos Car</a></div>
+                            <!-- <div><a class="footer_txt" href=""> </a></div> -->
+                        </div>
+                        <div class="col">
+                            <div><a class="footer_txt" href=""></a></div>
+                            <div><a class="footer_txt" href=""></a></div>
+                            <div><a class="footer_txt" href=""></a></div>
+                            <div><a class="footer_txt" href=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

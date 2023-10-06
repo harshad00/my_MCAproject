@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    z-index: 1;
+}
+/*! css  for main content */
+.main {
+    width: 100%;
+    position: relative;
+}
+
+/* ! css for slider  */
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1.4rem;
+}
+
+/* !customise image width heigth or border-radius */
+.slide_w {
+    width: 100%;
+}
+
+.br_img {
+    width: 100%;
+    height: 500px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+/*!  css for heading of all header */
+
+.heading {
+    width: 80%;
+    height: 3rem;
+    margin: 0px auto;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+    top: 5rem;
+    left: 0px;
+
+}
+
+
+/* ! css for cards */
+
+.heading_text {
+    width: fit-content;
+    white-space: nowrap;
+    /* background-color: #8594906e; */
+    border: 1px solid black;
+    border-radius: 0px 3px 3px 0px;
+    padding: 0px 3px;
+
+}
+
+
+
+.main_card {
+    position: relative;
+    top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 2rem;
+}
+
+.card-img{
+    height: 20rem;
+}
+
+/*! css for footer */
+
+.footer {
+    width: 100%;
+    height: 27rem;
+    position: relative;
+    top: 6rem;
+    background-color: rgb(42, 36, 36);
+}
+
+.text_logo {
+    width: 100%;
+    /* height: 14ch; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* ! css for animation and footer logo.  */
+.text_logo_size {
+    width: 16ch;
+    margin-top: 1rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 2px;
+    border-right: 5px solid;
+    animation: text 4s steps(16) infinite, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border: none;
+    }
+}
+
+@keyframes text {
+    from {
+        width: 0;
+    }
+
+}
+
+/*! css for footer content */
+.col {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.footer_txt {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_cart {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+/* ! css for reviews  */
+
+
+.review_catd {
+    position: relative;
+    top: 6rem;
+}
+
+.review_img,
+.rv_img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-left: 3.5rem;
+}
+
+.review_heheading {
+    margin-top: 3px;
+}

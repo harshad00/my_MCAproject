@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    text-align: center;
+    background-color: #007BFF;
+    position: relative;
+    top: 4rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #5fe4b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    {{!-- box-shadow: 0px 3px 3px 0px gray; --}}
+    transition: all 0.6s ease-in-out;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 3px 3px 0px gray;
+}
+
+ </style>
+ <script>
+
+JavaScript (script.js):
+javascript
+Copy code
+document.getElementById("paymentForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Get form values
+    var cardNumber = document.getElementById("cardNumber").value;
+    var expDate = document.getElementById("expDate").value;
+    var cvv = document.getElementById("cvv").value;
+
+    // Validate and process payment (simulated)
+    if (validatePayment(cardNumber, expDate, cvv)) {
+        alert("Payment successful!");
+        // You can add code here to send payment data to a server or perform any necessary actions.
+    } else {
+        alert("Payment failed. Please check your card details.");
+    }
+});
+
+function validatePayment(cardNumber, expDate, cvv) {
+    // Implement your payment validation logic here (e.g., using a payment gateway API).
+    // This is a simplified example, and you should use a secure server-side solution for payment processing.
+    return true; // For demonstration purposes, assume payment is always valid.
+}
+Please note that this is a basic example for demonstration purposes. In a real-world scenario, you should integrate a secure payment gateway API and perform server-side validation and processing for payments to ensure security and compliance with payment regulations.
+ </script>
+</head>
+<body>
+    <div class="login_form">
+        <div class="container">
+        <h1>Payment Details</h1>
+        <form id="paymentForm" method="post" action="pay_form">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" name="pinNo" required>
+
+            <label for="expDate">Expiration Date</label>
+            <input type="text" id="expDate" placeholder="MM/YYYY" name="Date" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" name="cvv" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
